@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <div class="texto-cabecalho">
+            <h1>Encontre os <span>melhores artigos</span><br> de programação em um só lugar</h1>
+            <p>Explore o topo da programação em um só lugar! <br> Seu destino único para dicas e tendências atuais. </p>
+            <a href="#">BUSCAR ARTIGOS</a>
+        </div>
+        <div class="imagem-cabecalho-container">
+            <img src="imagem-cabecalho.png" alt="Ilustração de uma pessoa com um computador" class="imagem-cabecalho">
+        </div>
+    </header>
+
+    <main>
+        <section class="artigos-section">
+            <h2>Artigos Recomendados</h2>
+
+            <ul class="lista-artigos">
+                <li>
+                    <img src="artigo1.png">
+                    <div class="texto-artigo">
+                        <h3>O que é linguagem de programação? Conheça as principais</h3>
+                        <p>Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="artigo2.png">
+                    <div class="texto-artigo">
+                        <h3>O que é linguagem de programação? Conheça as principais</h3>
+                        <p>Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+                    </div>
+                    
+                </li>
+                <li>    
+                    <img src="artigo3.png">
+                    <div class="texto-artigo">
+                        <h3>O que é linguagem de programação? Conheça as principais</h3>
+                        <p>Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img src="artigo4.png">
+                    <div class="texto-artigo">
+                        <h3>O que é linguagem de programação? Conheça as principais</h3>
+                        <p>Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img src="artigo5.png">
+                    <div class="texto-artigo">
+                        <h3>O que é linguagem de programação? Conheça as principais</h3>
+                        <p>Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <img src="artigo6.png">
+                    <div class="texto-artigo">
+                        <h3>O que é linguagem de programação? Conheça as principais</h3>
+                        <p>Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <form action="#">
+            <h4>Entre em contato</h4>
+
+            <input type="text" placeholder="Nome" class="inputs inputs-texto">
+            <input type="email" placeholder="Email" class="inputs inputs-texto" id="email">
+            <textarea id="mensagem-form" class="inputs" placeholder="Assunto da mensagem"></textarea>
+            <input type="submit" value="ENTRAR EM CONTATO" class="btn-enviar">
+        </form>
+    </footer>
 </body>
 </html>
