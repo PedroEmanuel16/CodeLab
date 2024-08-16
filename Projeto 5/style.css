@@ -47,7 +47,7 @@ nav a{
 }
 .container-principal1{
     height: 86vh;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .container-principal1 h3{
@@ -161,4 +161,52 @@ footer{
     text-align: center;
     background-color: #151515;
     color: #fff;
+}
+
+@media (min-width: 850px) and (max-width: 1229px){
+    .header-itens{
+        max-width: 800px;
+    }
+    .container-principal{
+        max-width: 800px;
+    }
+    .projetos-lista{
+        align-items: center;
+    }
+}
+
+@media (max-width: 850px){
+    .header-itens{
+        max-width: 370px;
+    }
+    .header-itens h1{
+        font-size: 17px;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    nav ul a{
+        font-size: 14px;
+    }
+    .container-principal{
+        max-width: 370px;
+    }
+    .projetos-lista{
+        align-items: center;
+    }
+    .container-principal1{
+        flex-direction: column-reverse;
+    }
+    .container-principal1 img{
+        height: 200px;
+    }
+    .principal-texto h2{
+        font-size: 40px;
+    }
+    .principal-texto h3{
+        font-size: 20px;
+    }
+    .btn-padrao{
+        padding: 10px;
+    }
 }
