@@ -1,0 +1,319 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.hero{
+    background-image: url(../imgs/bg-hero.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+.header-itens{
+    width: 1216px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    height: 15vh;
+}
+
+.nav-lista{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    text-transform: uppercase;
+}
+.nav-lista a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero-site-texto{
+    height: 85vh;
+    width: 1216px;
+    margin: 0 auto;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.hero-site-texto h1{
+    font-size: 64px;
+}
+.hero-site-texto p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.btns-padrao{
+    padding: 16px 32px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF1541;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+.placar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 128px 0;
+}
+.placar img{
+    height: 130px;
+}
+.placar h2{
+    font-size: 32px;
+}
+.placar h3{
+    font-size: 64px;
+    color: #FF1541;
+}
+.placar span{
+    color: #ff154093;
+}
+.comunicado{
+    display: flex;
+    justify-content: center;
+    background-image: url(../imgs/bg-comunicado.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.texto-comunicado{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1020px;
+    padding: 40px;
+    background-color: #fff;
+    margin: 180px 0
+}
+.texto-comunicado h2{
+    font-size: 32px;
+}
+.texto-comunicado h2::before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 3px;
+    margin-right: 10px;
+    background-color: #FF1541;
+}
+.texto-comunicado p{
+    font-size: 20px;
+}
+.link-ler{
+    text-decoration: none;
+    font-size: 18px;
+    color: #FF1541;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.noticias{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1016px;
+    margin: 128px auto;
+}
+.noticias h2::before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 3px;
+    background-color: #FF1541;
+    margin-right: 10px;
+}
+.noticias-lista{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.noticias-lista h4{
+    margin: 15px 0;
+}
+.equipe-principal{
+    display: flex;
+    gap: 35px;
+}
+.equipe-principal h5:nth-of-type(1){
+    color: #FF1541;
+}
+footer{
+    background-color: #0C1324;
+}
+.footer-itens{
+    width: 1016px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 40px;
+    color: #fff;
+    padding: 70px 0;
+}
+.footer-itens img{
+    height: 80px;
+    width: 79.53px;
+}
+.footer-links{
+    max-width: 100%;
+    display: flex;
+    gap: 17%;
+}
+.footer-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-links ul li:nth-of-type(1){
+    font-size: 24px;
+    color: #fff;
+}
+.footer-itens ul li{
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffffbb;
+}
+
+@media (min-width: 680px) and (max-width: 1230px){
+    .header-itens{
+        width: 592px;
+    }
+    .nav-lista{
+        display: none;
+    }
+    .hero-site-texto{
+        width: 592px;
+    }
+    .texto-comunicado{
+        width: 680px;
+    }
+    .noticias{
+        width: 592px;
+    }
+    .noticias-lista{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .noticias-lista div{
+        text-align: start;
+        justify-content: start;
+        align-items: center;
+        width: 592px;
+    }
+    .noticias-lista img{
+        width: 592px;
+        height: 360px;
+    }
+    .placar{
+        padding: 60px 0;
+    }
+    .placar h2{
+        font-size: 24px;
+    }
+    .placar img{
+        height: 64px;
+    }
+    .placar h3{
+        font-size: 36px;
+    }
+    .footer-itens{
+        width: 680px;
+        padding: 40px 20px;
+    }
+    .footer-links ul li:nth-of-type(1){
+        font-size: 20px;
+    }
+    .footer-links ul li{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 680px){
+    .header-itens{
+        width: 325px;
+    }
+    .nav-lista{
+        display: none;
+    }
+    .hero-site-texto{
+        width: 325px;
+    }
+    .hero-site-texto h1{
+        font-size: 24px;
+    }
+    .hero-site-texto p{
+        font-size: 16px;
+        width: 100%;
+    }
+    .btns-padrao{
+        font-size: 14px;
+    }
+    .texto-comunicado{
+        width: 325px;
+    }
+    .texto-comunicado h2{
+        font-size: 16px;
+    }
+    .texto-comunicado p{
+        font-size: 14px;
+    }
+    .link-ler{
+        font-size: 14px;
+    }
+    .noticias{
+        width: 325px;
+    }
+    .noticias-lista{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .noticias-lista div{
+        text-align: start;
+        justify-content: start;
+        align-items: center;
+        width: 325px;
+    }
+    .noticias-lista img{
+        width: 325px;
+    }
+    .placar{
+        padding: 60px 0;
+    }
+    .placar h2{
+        font-size: 12px;
+    }
+    .placar img{
+        height: 32px;
+    }
+    .placar h3{
+        font-size: 24px;
+    }
+    .footer-itens{
+        width: 325px;
+        padding: 40px 20px;
+    }
+    .footer-links{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-links ul li:nth-of-type(1){
+        font-size: 20px;
+    }
+    .footer-links ul li{
+        font-size: 13px;
+    }
+}
