@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1</title>
+    <link rel="stylesheet" href="../assets/css-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4921aa317d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="pt-5 pb-5">
+        <div class="container">
+            <div class="img-header text-center">
+                <img class="navbar-brand" src="CodeLab.png" alt="Logo do site">
+            </div>
+
+
+            <section class="barra-pesquisa mt-4 text-start d-flex align-items-center p-2">
+                <label for="pesquisa" class="lupa m-0"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="text" placeholder="Pesquisar no blog" id="pesquisa" class="border-0 bg-transparent ml-2 w-100">
+            </section>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="parte-favoritada p-4 text-light mt-5" id="parte1">
+                <div class="elementos d-flex justify-content-between">
+                    <p class="data">17 de ago, 2024</p>
+                    <img src="icon-heart-active.png" alt="imagem de um coração" class="imagemCoracao1"
+                        onclick="trocarBorda('parte1')">
+                </div>
+                <h1 class="textoElemento">O que é linguagem de programação? Conheça as principais</h1>
+                <p class="paragrafo-elemento mt-3">Uma das mais populares vertentes da tecnologia da informação, a área de
+                    programação segue tendo muita demanda de trabalho justamente pela velocidade com que dispositivos
+                    tecnológicos vêm avançando.</p>
+            </section>
+            <section class="partes p-4 text-light mt-5" id="parte2">
+                <div class="elementos d-flex justify-content-between">
+                    <p class="data">12 de jul, 2024</p>
+                    <img src="icon-heart.png" alt="imagem de um coração" class="imagemCoracao2"
+                        onclick="trocarBorda('parte2')">
+                </div>
+                <h1 class="textoElemento">GitHub agora permite fazer login sem precisar de senha</h1>
+                <p class="paragrafo-elemento mt-3">O GitHub anunciou nesta quarta-feira (12) o acesso a partir das passkeys,
+                    método de autenticação sem senhas. A novidade está disponível em uma versão beta pública e pode
+                    substituir a autenticação em dois fatores.</p>
+            </section>
+            <section class="partes p-4 text-light mt-5" id="parte3">
+                <div class="elementos d-flex justify-content-between">
+                    <p class="data">21 de jun, 2024</p>
+                    <img src="icon-heart.png" alt="imagem de um coração" class="imagemCoracao3"
+                        onclick="trocarBorda('parte3')">
+                </div>
+                <h1 class="textoElemento">Por que os hiperlinks são azuis em sua maioria?</h1>
+                <p class="paragrafo-elemento mt-3">Quem navega na internet, certamente já percebeu que ela conta com diversos
+                    recursos para tornar a nossa vida mais fácil. Entre essas opções podemos mencionar os hiperlinks –
+                    uma palavra ou termo clicável que direciona o leitor.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container text-center p-5 mt-5">
+            <img src="CodeLab.png" alt="Logo do site">
+        </div>
+    </footer>
+
+
+    <script src="../assets/js-bootstrap/jquery.js"></script>
+    <script src="../assets/js-bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -38,9 +38,8 @@ imagem3.addEventListener('click', function () {
 
 function trocarBorda(id) {
     let borda = document.getElementById(id)
-    let borda_status = borda.className
 
-    if (borda_status == 'parte-favoritada') {
+    if (borda.classList.contains('parte-favoritada')) {
         borda.classList.remove('parte-favoritada')
         borda.classList.add('partes')
     } else {
