@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css-bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="">
+        <div class="container d-flex justify-content-between align-items-center pt-5 pb-5 mb-5">
+            <div class="texto-cabecalho">
+                <h1>
+                    Encontre os <span>melhores artigos</span><br />
+                    de programação em um só lugar
+                </h1>
+                <p class="pt-4 pb-4">
+                    Explore o topo da programação em um só lugar! <br class="esconder-br">
+                    Seu destino único para dicas e tendências atuais.
+                </p>
+                <div class="btn-buscar">
+                    <a href="#" class="btn btn-primary pl-4 pr-4">BUSCAR ARTIGOS</a>
+                </div>
+            </div>
+            <div class="imagem-cabecalho-container">
+                <img src="imagem-cabecalho.png" alt="Ilustração de uma pessoa com um computador"
+                    class="imagem-cabecalho img-fluid" />
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="artigos-section">
+                <h2 class="pb-5">Artigos Recomendados</h2>
+
+                <div class="artigos">
+                    <div class="row mt-5">
+                        <div class="col">
+                            <figure class="border rounded">
+                                <img src="artigo1.png" class="img-fluid figure-img"/>
+                                <figcaption class="texto-artigo p-3">
+                                    <h3>O que é linguagem de programação? Conheça as principais</h3>
+                                    <p>
+                                        Uma das mais populares vertentes da tecnologia da informação, a
+                                        área de...
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="col">
+                            <figure class="border rounded">
+                                <img src="artigo2.png" class="img-fluid figure-img"/>
+                                <figcaption class="texto-artigo p-3">
+                                    <h3>Python: por que a linguagem é tão usada para Data Science e finanças?</h3>
+                                    <p>
+                                        O mundo da programação conta com algumas opções de linguagem para...
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                        <div class="col">
+                            <figure class="border rounded">
+                                <img src="artigo3.png" class="img-fluid figure-img"/>
+                                <figcaption class="texto-artigo p-3">
+                                    <h3>GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários</h3>
+                                    <p>
+                                        O popular serviço de repositório de código GitHub foi adquirido pela...
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col">
+                            <figure class="border rounded">
+                                <img src="artigo4.png" class="img-fluid figure-img"/>
+                                <figcaption class="texto-artigo p-3">
+                                    <h3>15 comandos no GIT que os desenvolvedores precisam saber</h3>
+                                    <p>
+                                        Dominar os comandos GIT é uma habilidade que se conquista com...
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="border rounded">
+                                <img src="artigo5.png" class="img-fluid figure-img"/>
+                                <figcaption class="texto-artigo p-3">
+                                    <h3>GIT e GitHub: o que são e quais as diferenças entre eles?</h3>
+                                    <p>
+                                        Git e GibHub são dois softwares de controle de versão essenciais para...
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col">
+                            <figure class="border rounded">
+                                <img src="artigo6.png" class="img-fluid figure-img" />
+                                <figcaption class="texto-artigo p-3">
+                                    <h3>GitHub Copilot ganha integração com GPT-4 e interface</h3>
+                                    <p>
+                                        O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+            </section>
+        </main>
+    </div>
+        <footer>
+            <div class="container d-flex justify-content-center align-items-center">
+            <form class="d-flex flex-column">
+                <h4 class="text-center mt-4">Entre em contato</h4>
+
+                <input type="text" placeholder="Nome" class="form-control"/>
+                <input type="email" placeholder="Email" class="form-control" id="email" />
+                <textarea id="mensagem-form" class="form-control" placeholder="Assunto da mensagem"></textarea>
+                <input type="submit" value="ENTRAR EM CONTATO" class="btn-enviar btn btn-primary" />
+            </form>
+        </div>
+        </footer>
+        <script src="../assets/js-bootstrap/jquery.js"></script>
+        <script src="../assets/js-bootstrap/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>

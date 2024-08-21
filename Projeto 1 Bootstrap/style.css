@@ -1,3 +1,6 @@
+*{
+    font-family: "Inter", sans-serif;
+}
 :root{
     --color-header: #17171A;
     --search-bar: #202024;

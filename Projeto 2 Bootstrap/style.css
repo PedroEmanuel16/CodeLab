@@ -1,0 +1,56 @@
+/* Declarando variáveis */
+
+:root{
+    --header: #f8f8ff;
+    --btn-bg: #846aff;
+    --btn-bg-hover: #715dd6;
+    --text: #fff;
+    --border-li: #eeeeff;
+    --border-inputs: #eaeaea;
+    --outline-inputs: #cfcfd9;
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+header{
+    background-color: var(--header);
+    
+}
+.texto-cabeçalho{
+    font-size: 40px;
+    font-weight: 600;
+}
+.texto-cabecalho span{
+    color: var(--btn-bg);
+}
+.texto-cabecalho p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.btn{
+    background-color: var(--btn-bg);
+    border: none;
+}
+.btn:hover{
+    background-color: var(--btn-bg-hover);
+}
+.texto-artigo h3{
+    font-size: 19px;
+}
+.texto-artigo p{
+    font-size: 17px;
+}
+footer{
+    background-color: var(--header)
+}
+form{
+    width: 592px;
+    gap: 20px;  
+}
+form textarea{
+    resize: none;
+}
+@media (max-width: 1200px){
+    
+}
