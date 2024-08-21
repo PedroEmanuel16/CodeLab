@@ -1,0 +1,86 @@
+:root{
+    --text: #fff;
+    --button-with-img: #F1A5B1;
+    --font-color-button-img: #000;
+    --border-button: #F1A5B1;
+}
+
+* {
+    font-family: "Andada Pro", serif;
+}
+body{
+    background-image: url(background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+header{
+    height: 10vh;
+}
+main{
+    height: 90vh;
+}
+ul{
+    gap: 20px;
+}
+.imagem-main img{
+    height: 423.8px;
+}
+.texto-main h3{
+    font-size: 20px;
+}
+.texto-main h1{
+    font-size: 64px;
+}
+.texto-main p{
+    font-size: 24px;
+}
+#botao-com-img{
+    background-color: var(--button-with-img);
+    color: var(--font-color-button-img);
+    border: none;
+    font-weight: 700;
+}
+#botao-sem-img{
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--border-button);
+    font-weight: 700;
+}
+@media (max-width: 1030px){
+    main{
+        flex-direction: column-reverse;
+        
+    }
+    .imagem-main img{
+        height: 241.44px;
+    }
+    .texto-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .texto-main h3{
+        font-size: 16px;
+    }
+    .texto-main h1{
+        font-size: 40px;
+    }
+    .br{
+        display: none;
+    }
+    .texto-main p{
+        font-size: 16px;
+        width: 500px;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:20px;
+    }
+    #botao-com-img, #botao-sem-img{
+        width: 100%;
+    }
+}
