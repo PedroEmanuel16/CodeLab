@@ -23,7 +23,7 @@ header{
 .header-itens h1{
     font-size: 24px;
     font-family: "Preahvihear", sans-serif;
-    color: rgb(46, 227, 221);
+    color: #2ee3dd;
 }
 nav ul{
     display: flex;
@@ -78,7 +78,7 @@ nav a{
     background-color: rgb(16, 210, 204);
 }
 .principal-imagem img{
-    -webkit-filter: drop-shadow(50px 50px 50px rgba(46, 227, 221,0.4));
+    -webkit-filter: drop-shadow(50px 50px 50px #2ee3dd66);
 }
 .container-principal-sobre{
     background-color: #151515;

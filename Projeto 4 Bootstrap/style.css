@@ -1,0 +1,66 @@
+:root{
+    --border-header: #E2E2E2;
+    --text: #fff;
+}
+
+*{
+    font-family: "Nunito", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+header{
+    border-bottom: 2px solid var(--border-header);
+}
+header ul{
+    gap: 30px;    
+}
+nav ul{
+    gap: 35px;
+}
+.artigos{
+    list-style: none;
+}
+.artigos div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: var(--text);
+    max-width: 100%;
+}
+.artigo1{
+    background-image: url(xbox-bg.jpg);
+}
+.artigo2{
+    background-image: url(cyberphunk-bg.jpg);
+}
+.artigo3{
+    background-image: url(multiversus.png);
+}
+.artigo4{
+    background-image: url(eagames-bg.jpg);
+}
+.artigos h2{
+    font-size: 16px;
+}
+.artigos h1{
+    font-size: 24px;
+}
+.btn-padrao{
+    background-color: transparent !important;
+    color: #000 !important;
+    font-weight: 600 !important;
+}
+footer{
+    border-top: 2px solid var(--border-header);
+}
+footer ul{
+    gap: 20px;
+}
+@media (max-width: 500px){
+    .logo{
+        height: 27px !important;
+    }
+}

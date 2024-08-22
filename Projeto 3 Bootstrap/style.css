@@ -18,6 +18,9 @@ body{
 header{
     height: 10vh;
 }
+header img{
+    max-height: 100%;
+}
 main{
     height: 90vh;
 }
@@ -27,6 +30,10 @@ ul{
 .imagem-main img{
     height: 423.8px;
 }
+.texto-main{
+    width: 502px;
+    max-width: 100%;
+}
 .texto-main h3{
     font-size: 20px;
 }
@@ -34,7 +41,7 @@ ul{
     font-size: 64px;
 }
 .texto-main p{
-    font-size: 24px;
+    font-size: 24px;;
 }
 #botao-com-img{
     background-color: var(--button-with-img);
@@ -48,7 +55,7 @@ ul{
     border: 2px solid var(--border-button);
     font-weight: 700;
 }
-@media (max-width: 1030px){
+@media (min-width: 500px) and (max-width: 992px){
     main{
         flex-direction: column-reverse;
         
@@ -57,9 +64,7 @@ ul{
         height: 241.44px;
     }
     .texto-main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        width: 448px;
     }
     .texto-main h3{
         font-size: 16px;
@@ -67,20 +72,44 @@ ul{
     .texto-main h1{
         font-size: 40px;
     }
-    .br{
-        display: none;
+    .texto-main p{
+        font-size: 16px;
+    }
+    .btn-group{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .btn-group a{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    main{
+        flex-direction: column-reverse;
+    }
+    .imagem-main img{
+        height: 184.58px;
+    }
+    .texto-main{
+        width: 448px;
+    }
+    .texto-main h3{
+        font-size: 16px;
+    }
+    .texto-main h1{
+        font-size: 40px;
     }
     .texto-main p{
         font-size: 16px;
-        width: 500px;
     }
-    .botoes{
-        display: flex;
+    .btn-group{
         flex-direction: column;
         width: 100%;
-        gap:20px;
+        gap: 10px;
     }
-    #botao-com-img, #botao-sem-img{
+    .btn-group a{
         width: 100%;
     }
 }

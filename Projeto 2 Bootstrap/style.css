@@ -51,6 +51,40 @@ form{
 form textarea{
     resize: none;
 }
-@media (max-width: 1200px){
-    
+@media (min-width:460px) and (max-width: 992px){
+    .imagem-cabecalho-container img{
+        height: 379.5px;
+    }
+    .texto-cabecalho{
+        text-align: center;
+    }
+    .texto-cabecalho h1{
+        font-size: 32px;
+    }
+    .texto-cabecalho p{
+        font-size: 20px;
+    }
+    .btn-buscar{
+        text-align: center;
+    }
+}
+@media (max-width: 460px){
+    .imagem-cabecalho-container img{
+        height: 240px;
+    }
+    .texto-cabecalho{
+        text-align: center;
+    }
+    .texto-cabecalho h1{
+        font-size: 24px;
+    }
+    .texto-cabecalho p{
+        font-size: 16px;
+    }
+    .btn-buscar{
+        text-align: center;
+    }
+    .btn-buscar a{
+        width: 100%;
+    }
 }

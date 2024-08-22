@@ -1,0 +1,110 @@
+:root{
+    --bg-padrao: #0E0E0E;
+    --border-header-items: #151515;
+    --color-text-marked: #2ee3dd;
+    --text-white: #fff;
+    --text-black: #000;
+    --sombra-me: #2ee3dd66;
+    --font-marked: "Preahvihear", sans-serif;
+}
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+.hero{
+    background-color: var(--bg-padrao);
+}
+nav{
+    border-bottom: 1px solid var(--border-header-items);
+}
+nav h1{
+    color: var(--color-text-marked);
+    font-size: 24px !important;
+    font-family: var(--font-marked) !important;
+}
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+.principal-texto{
+    gap: 10px;
+}
+.principal-imagem img{
+    -webkit-filter: drop-shadow(50px 50px 50px #2ee3dd66);
+}
+.principal-texto h2{
+    color: var(--color-text-marked);
+    font-size: 48px;
+    font-family: var(--font-marked);
+}
+.principal-texto h3{
+    font-size: 24px;
+}
+.btns-padrao{
+    background-color: var(--color-text-marked) !important;
+    border-color: none !important;
+}
+.btn:focus{
+    box-shadow: none !important;
+}
+.btn-primary:focus{
+    box-shadow: none !important;
+}
+.sobre-mim{
+    background-color: var(--border-header-items);
+}
+.sobre-mim h2{
+    color: var(--color-text-marked);
+    font-size: 32px;
+    font-family: var(--font-marked);
+}
+.sobre-mim h3{
+    font-size: 20px;
+}
+.sobre-mim p{
+    font-size: 20px;
+}
+.container-principal{
+    gap: 15px;
+}
+.instagram i{
+    font-size: 24px;
+    color: var(--color-text-marked);
+}
+.projetos-lista{
+    list-style: none;
+}
+.container-principal-projetos{
+    background-color: var(--bg-padrao);
+}
+.container-principal3 h2{
+    color: var(--color-text-marked);
+    font-size: 32px;
+    font-family: var(--font-marked);
+}
+.conteudo{
+    gap: 13px;
+}
+.conteudo img{
+    height: 200px;
+    width: 100%;
+    border-left: 4px solid var(--color-text-marked);
+}
+.conteudo h5{
+    color: var(--color-text-marked);
+    font-size: 18px;
+}
+.btns-links{
+    gap: 10px;
+}
+footer{
+    background-color: var(--border-header-items);
+}
+footer h4{
+    font-family: var(--font-marked) !important;
+}
+
+@media (max-width:600px){
+    .container-principa2 p{
+        font-size: 10px;
+    }
+}
