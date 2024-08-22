@@ -1,0 +1,172 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    --bg-standard: #FF1541;
+    --color-span: #ff154093;
+    --bg-footer: #0C1324;
+    --color-li-footer: #ffffffbb;
+}
+
+* {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    background-image: url(../imgs/bg-hero.png);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+}
+
+.nav-lista {
+    gap: 30px;
+}
+
+header {
+    height: 100px;
+}
+
+.hero-site-texto {
+    height: calc(90vh - 100px);
+}
+
+.hero-site-texto h1 {
+    font-size: 64px;
+}
+
+.hero-site-texto p {
+    font-size: 24px;
+}
+
+.btns-padrao {
+    font-weight: 600;
+    background-color: var(--bg-standard) !important;
+}
+
+.placar div {
+    gap: 30px;
+}
+
+.placar h3 {
+    color: var(--bg-standard);
+    font-size: 64px;
+}
+
+.placar h3 span {
+    color: var(--color-span);
+}
+
+.comunicado {
+    background-image: url(../imgs/bg-comunicado.png);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.texto-comunicado {
+    width: 70% !important;
+}
+
+.link-ler {
+    color: var(--bg-standard) !important;
+    font-weight: 600;
+}
+
+.equipe-principal {
+    gap: 40px;
+}
+
+.equipe-principal h5 {
+    font-size: 12px !important;
+}
+
+.equipe {
+    color: var(--bg-standard);
+}
+.noticias h2::before{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 3px;
+    background-color: #FF1541;
+    margin-right: 10px;
+}
+.comunicado h2::before{
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 3px;
+    background-color: #FF1541;
+    margin-right: 10px;
+}
+footer {
+    background-color: var(--bg-footer);
+}
+
+.footer-itens img {
+    height: 80px;
+    width: 79.53px;
+}
+
+.footer-links .text-white {
+    font-size: 24px;
+}
+
+.footer-links ul {
+    color: var(--color-li-footer);
+    gap: 10px;
+}
+
+@media (max-width: 1045px) {
+    .placar h3 {
+        font-size: 36px;
+    }
+
+    .placar h2 {
+        font-size: 24px;
+    }
+
+    .placar img {
+        height: 64px;
+    }
+
+}
+
+@media (max-width:991px) {
+    .noticias-lista img {
+        height: 360px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:800px) {
+    .placar h3 {
+        font-size: 24px;
+    }
+
+    .placar h2 {
+        font-size: 12px;
+    }
+
+    .placar img {
+        height: 32px;
+    }
+    .texto-comunicado h2{
+        font-size: 16px;
+    }
+    .hero-site-texto h1{
+        font-size: 24px;
+    }
+    .hero-site-texto p{
+        font-size: 16px;
+    }
+    .comunicado{
+        height: 100vh;
+    }
+}

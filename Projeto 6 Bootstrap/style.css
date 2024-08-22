@@ -1,4 +1,4 @@
-:root{
+:root {
     --text-dark: #000;
     --text-light: #fff;
     --btn-bg: #FF0000;
@@ -6,45 +6,145 @@
     --font-marked: "Koh Santepheap", serif;
 }
 
-*{
+* {
     font-family: "Poppins", sans-serif;
 }
 
 
-.btn-padrao{
+.btn-padrao {
     background-color: var(--btn-bg) !important;
     border-radius: 60px !important;
 }
-nav ul{
+
+nav ul {
     list-style: none;
     gap: 40px;
 }
-.texto-comida, .texto-sobre-nos{
+
+.texto-comida {
     width: 545px;
 }
-.texto-comida h1{
+
+.texto-sobre-nos {
+    width: 40%;
+}
+
+.texto-comida h1 {
     font-family: var(--font-marked);
     font-size: 48px;
 }
-.texto-comida p{
+
+.texto-comida p {
     font-size: 24px;
 }
-.imagem-prato img{
+
+.imagem-comida img {
     height: 400px;
 }
-.texto-sobre-nos h2, h1{
+
+.imagem-prato img {
+    height: 400px;
+}
+
+.texto-sobre-nos h2,
+h1 {
     font-family: var(--font-marked);
 }
-.texto-sobre-nos h1{
+
+.texto-sobre-nos h1 {
     font-size: 48px;
 }
-.texto-sobre-nos h2{
+
+.texto-sobre-nos h2 {
     color: var(--btn-bg);
     font-size: 24px;
 }
-.texto-sobre-nos p{
+
+.texto-sobre-nos p {
     line-height: 27px;
 }
-.comidas-populares div{
+
+.comidas-populares figure {
     background-color: var(--bg-foods);
+    position: relative;
+    height: 370px;
+}
+
+.comida1,
+.comida2,
+.comida3 {
+    margin-top: 60px;
+}
+
+.comidas-populares img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -114px;
+    /* transform: translateY(50%); */
+}
+
+.comidas-populares figcaption h1 {
+    font-size: 29px;
+}
+
+.comentarios figure {
+    background-color: var(--bg-foods);
+}
+
+.comentarios p {
+    font-size: 24px;
+}
+
+.listas-footer ul {
+    list-style: none;
+}
+
+.listas-footer .container {
+    gap: 15%;
+}
+
+.listas-footer ul {
+    gap: 10px;
+}
+
+.titulo-ul {
+    font-size: 20px;
+}
+
+.footer-logo-redes .container {
+    border-top: 2px solid var(--bg-foods);
+}
+
+.icones-redes {
+    gap: 20px;
+}
+
+@media (max-width: 992px) {
+    .imagem-comida img {
+        height: 300px;
+    }
+
+    .texto-comida {
+        width: 100%;
+    }
+
+    .texto-sobre-nos {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .comidas-populares img {}
+
+    .listas-footer .container {
+        gap: 20px;
+    }
+
+    .titulo-ul {
+        font-size: 15px !important;
+    }
+
+    .listas-footer ul {
+        font-size: 10px;
+    }
 }
