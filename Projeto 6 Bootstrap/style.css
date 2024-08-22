@@ -1,0 +1,50 @@
+:root{
+    --text-dark: #000;
+    --text-light: #fff;
+    --btn-bg: #FF0000;
+    --bg-foods: #F8F5F2;
+    --font-marked: "Koh Santepheap", serif;
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+
+.btn-padrao{
+    background-color: var(--btn-bg) !important;
+    border-radius: 60px !important;
+}
+nav ul{
+    list-style: none;
+    gap: 40px;
+}
+.texto-comida, .texto-sobre-nos{
+    width: 545px;
+}
+.texto-comida h1{
+    font-family: var(--font-marked);
+    font-size: 48px;
+}
+.texto-comida p{
+    font-size: 24px;
+}
+.imagem-prato img{
+    height: 400px;
+}
+.texto-sobre-nos h2, h1{
+    font-family: var(--font-marked);
+}
+.texto-sobre-nos h1{
+    font-size: 48px;
+}
+.texto-sobre-nos h2{
+    color: var(--btn-bg);
+    font-size: 24px;
+}
+.texto-sobre-nos p{
+    line-height: 27px;
+}
+.comidas-populares div{
+    background-color: var(--bg-foods);
+}
