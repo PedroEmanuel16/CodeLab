@@ -17,7 +17,7 @@ header {
     max-width: 100%;
     width: 1216px;
     margin: 0 auto;
-    padding: 48px 0px;
+    padding: 48px 30px;
 }
 
 header li {
@@ -125,6 +125,9 @@ main {
     }
 }
 @media (max-width: 534px){
+    header{
+        justify-content: center;
+    }
     header ul{
         display: none;
     }
