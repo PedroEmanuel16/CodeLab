@@ -50,8 +50,8 @@ nav li {
 }
 
 .artigos li {
-    width: 370px;
-    height: 384px;
+    width: 384px;
+    height: 500px;
     padding: 20px;
 }
 
@@ -80,22 +80,32 @@ h1 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
 }
 
 .artigo1 {
-    background-image: url(xbox.jpg);
+    background-image: url(xbox-bg.jpg);
 }
 
 .artigo2 {
-    background-image: url(cyberpunk.jpg);
+    background-image: url(cyberphunk-bg.jpg);
 }
 
+.hamburguer {
+    cursor: pointer;
+    display: none;
+}
+
+
 .artigo3 {
-    background-image: url(multi.jpg);
+    background-image: url(multiversus.png);
 }
 
 .artigo4 {
-    background-image: url(ea-games.jpg);
+    background-image: url(ea-games-bg.jpg);
     width: 1200px !important;
     max-width: 100%;
     background-position: center;
@@ -165,6 +175,25 @@ footer button {
 }
 
 @media (max-width: 726px){
+    .hamburguer{
+        display: flex;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        left: 100%;
+        /* background-color: red; */
+        text-align: center;
+        top: 110px;
+        height: 100vh;
+        flex-direction: column;
+    }
+    .lista-active {
+        background-color: rgb(255, 255, 255);
+        gap: 80px;
+        left: 0;
+        transition: left .3s ease-in-out;
+    }
     .redes-sociais{
         display: none;
     }

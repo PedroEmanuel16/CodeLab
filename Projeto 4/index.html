@@ -28,14 +28,14 @@
         <ul class="icones-header">
             <li><img src="User.png" alt=""></li>
             <li><img src="MagnifyingGlass.png" alt=""></li>
-            <li><img src="List.png" alt=""></li>
+            <li class="hamburguer"><img src="List.png" alt=""></li>
         </ul>
     </header>
 
     <main>
         <div class="container-principal">
             <nav>
-                <ul>
+                <ul class="lista-nav">
                     <li>INICIOS</li>
                     <li>CATEGORIA</li>
                     <li>SOBRE</li>
@@ -75,6 +75,15 @@
             <li>Política de privacidade</li>
         </ul>
     </footer>
+    <script>
+        let lista = document.querySelector('.lista-nav')
+
+        let hamburguer = document.querySelector('.hamburguer')
+        console.log(hamburguer)
+        hamburguer.addEventListener('click', function () {
+            lista.classList.toggle('lista-active')
+        })
+    </script>
 </body>
 
 </html>
