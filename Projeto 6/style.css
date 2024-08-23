@@ -81,7 +81,7 @@
     flex-direction: column;
 }
 .comidas-populares{
-    margin-top: 70px;
+    margin-top: 140px;
     display: flex;
     justify-content: space-between;
     gap: 109px;
@@ -90,9 +90,6 @@
     background-color: #F8F5F2;
     text-align: center;
 
-}
-.comidas-populares img{
-    
 }
 .comidas-populares p{
     font-size: 18px;
@@ -103,6 +100,19 @@
 }
 .comidas-populares h3{
     color: #FF0000;
+}
+.comidas-populares div{
+    position: relative;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.comidas{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100px;
 }
 .comentarios-pagina{
     flex-direction: column;
