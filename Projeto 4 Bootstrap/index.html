@@ -30,15 +30,15 @@
             <ul class="icones-header d-flex m-0 p-0">
                 <li><img src="User.png" alt=""></li>
                 <li><img src="MagnifyingGlass.png" alt=""></li>
-                <li><img src="List.png" alt=""></li>
+                <li><img src="List.png" alt="" class="hamburguer"></li>
             </ul>
         </div>
     </header>
     <div class="container">
         <main>
             <div class="container-principal">
-                <nav>
-                    <ul class="d-none d-sm-flex justify-content-center pt-4 pb-4">
+                <nav class="lista-nav">
+                    <ul class="d-flex d-sm-flex justify-content-center pt-4 pb-4">
                         <li>INICIOS</li>
                         <li>CATEGORIA</li>
                         <li>SOBRE</li>
@@ -47,25 +47,25 @@
                 </nav>
 
                 <div class="artigos row m-0">
-                    <div class="col col-12 col-lg-4 pl-0 mt-3">
+                    <div class="col col-12 col-lg-4 mt-3">
                         <div class="artigo1 d-flex flex-column justify-content-end p-3">
                             <h2>19 de outubro, 2023</h2>
                             <h1>Xbox: consoles ganham atualização com novos recursos</h1>
                         </div>
                     </div>
-                    <div class="col col-12 col-lg-4 pl-0 mt-3">
+                    <div class="col col-12 col-lg-4 mt-3">
                         <div class="artigo2 d-flex flex-column justify-content-end p-3">
                             <h2>4 de outubro, 2023</h2>
                             <h1>Cyberpunk vai ganhar novo jogo</h1>
                         </div>
                     </div>
-                    <div class="col col-12 col-lg-4 pl-0 mt-3">
+                    <div class="col col-12 col-lg-4 mt-3">
                         <div class="artigo3 d-flex flex-column justify-content-end p-3">
                             <h2>27 de setembro, 2023</h2>
                             <h1>Coringa pode aparecer em MultiVersus em breve</h1>
                         </div>
                     </div>
-                    <div class="col col-12  pl-0 mt-3">
+                    <div class="col col-12  mt-3">
                         <div class="artigo4 d-flex flex-column justify-content-end p-3">
                             <h2>30 de agosto, 2023</h2>
                             <h1>EA Games confirma novo jogo e janela de lançamento</h1>
@@ -95,6 +95,15 @@
 
     <script src="../assets/js-bootstrap/jquery.js"></script>
     <script src="../assets/js-bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+        let lista = document.querySelector('.lista-nav')
+
+        let hamburguer = document.querySelector('.hamburguer')
+        console.log(hamburguer)
+        hamburguer.addEventListener('click', function () {
+            lista.classList.toggle('lista-active')
+        })
+    </script>
 </body>
 
 </html>

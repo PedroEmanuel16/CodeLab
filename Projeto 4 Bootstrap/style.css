@@ -64,3 +64,25 @@ footer ul{
         height: 27px !important;
     }
 }
+@media (max-width: 576px){
+    nav {
+        position: fixed !important;
+        width: 100%;
+        left: 100%;
+        height: 100vh;
+        /* background-color: red; */
+        text-align: center;
+        top: 90px;
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .lista-active {
+        background-color: rgb(255, 255, 255);
+        z-index: 1;
+        gap: 80px;
+        left: 0;
+        transition: left .3s ease-in-out;
+    }
+}
